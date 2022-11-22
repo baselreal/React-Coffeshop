@@ -1,6 +1,6 @@
 import React from "react";
-import Coffee1 from './imagehome/coffee1.jpg'
-import './style.css'
+import Coffee1 from './coffee1.jpg'
+import '../style.css'
 
 const Navbar = () => {
   return (
