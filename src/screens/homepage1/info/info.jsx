@@ -1,12 +1,24 @@
 import React from "react";
+import Infocom from "../../../components/infocom/infocom";
 import { BsPersonFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 
-const Rectangle = () => {
+const Info = () => {
   return (
-    <div className="flex justify-center ">
-      <div className="flex justify-around items-center -mt-20 box-border h-40 w-[70%] border bg-white ">
+    <div className="flex justify-center items-center text-center -mt-32">
+     <div className=""> <Infocom logos={<BsPersonFill/>} names="90+" about='Staff'/> </div>
+     <div> <Infocom logos={<MdLocationPin/>} names="30+" about='Store'/></div>
+     <div> <Infocom logos={<AiOutlineHeart/>} names="800+" about='Customer'/> </div>
+    </div>
+  );
+};
+
+export default Info;
+
+
+
+{/* <div className="flex justify-around items-center -mt-20 box-border h-40 w-[70%] border bg-white ">
         <div className="flex space-x-4">
           <div className="border-3 bg-yellow-400 w-12 h-12 rounded-full text-2xl items-center justify-center text-center flex mt-2">
             <BsPersonFill />
@@ -34,9 +46,4 @@ const Rectangle = () => {
             <div className="">Customers</div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default Rectangle;
+      </div> */}

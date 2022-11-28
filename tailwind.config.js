@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pacifico: ["pacifico", "cursive"],
+        rubik: ['rubik', 'sans-serif']
       },
     },
   },

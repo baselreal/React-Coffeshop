@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navList li a:hover {
+    color: rgb(99, 114, 114);
+}
+
+.login:hover {
+    color: rgb(177, 184, 181);
+}
+
+.daftar:hover {
+    background-color: gold;
+    font-weight: 600;
+}
+
+.btn-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width:1094px){
+   .login {
+    display: none;
+   }
+
+   .daftar {
+    display: none;
+   }
+
+   .btn-toggle {
+    display: flex;
+   }
+}
