@@ -16,6 +16,7 @@ const Menu = () => {
       fav_check: <AiFillCheckCircle />,
       fav_desc: ["HazelnutSyrup", "Vanilla Whipped Cream", "Ice / Hot", "Sliced Banana on Top"],
       price: "IDR 25.000",
+      fav_btn: <button>Order Now</button>
     },
     {
       id: 30,
@@ -24,46 +25,58 @@ const Menu = () => {
       fav_check: <AiFillCheckCircle />,
       fav_desc: ["1 Shot of Coffee", "Vanilla Whipped Cream", "Chocolate Biscuits", "Strawberry Syrup", "Sliced strawberry on Top"],
       price: "IDR 30.000",
+      fav_btn: <button>Order Now</button>
     },
     {
-      id: 35,
+      id: 40,
       fav_Image: Chicken,
       fav_name: "Chicken Wings",
       fav_check: <AiFillCheckCircle />,
-      fav_desc: ["Wings", "Drum Sticks", "Mayonaise and Lemon", "Hot Fried", "Secret Recipe", "Buy 1 Get 1 only for Dine in"],
-      price: "IDR 35.000",
+      fav_desc: ["Wings", "Drum Sticks", "Mayonaise and Lemon", "Hot Fried", "Secret Recipe", "Buy 1 Get 1 "],
+      price: "IDR 40.000",
+      fav_btn: <button>Order Now</button>
     },
   ];
 
   const handleFavProduct = favProduct.map((prod) => {
     return (
-      <div key={prod.id} className="bg-gray-400 w-full h-screen">
-        <div>
-          <img src={prod.fav_Image} alt="" />
+      <div key={prod.id} className=" w-full flex justify-center">
+        <div className="box-border border-2 border-solid border-[#DDDDDD]">
+        <div className="pt-[62px] justify-center flex">
+          <img className="rounded-full" src={prod.fav_Image} alt="" />
         </div>
-        <div>
+        <div className="text-center pt-10 font-bold">
           <div>{prod.fav_name}</div>
         </div>
-        <div>
+        <div className="py-10 space-y-6 h-[300px]">
           {prod.fav_desc.map((item) => {
             return (
-              <div className="flex flex-row">
-                <div className="flex">{prod.fav_check}</div>
-                <div className="flex flex-col">{item}</div>
+              <div className="flex flex-row px-24 space-x-3">
+                <div className="flex text-yellow-300">{prod.fav_check}</div>
+                <div className="flex flex-col -mt-1 text-[14px]">{item}</div>
               </div>
             );
           })}
         </div>
-        <div>{prod.price}</div>
+        <div className="justify-center flex">
+        <div className=" font-bold ">{prod.price}</div>
+        </div>
+        <div className="flex justify-center text-center items-end h-fit pt-5 pb-[50px]">
+        <div className=" box-border border-2 border-solid  inline-block  py-3 px-10">
+          {prod.fav_btn}
+        </div>
+        </div>
+        </div>
+        
       </div>
     );
   });
 
   return (
-    <div className="w-full h-screen bg-gray-50 flex flex-col items-center">
+    <div className="w-full bg-gray-50 flex flex-col items-center ">
       <div className="text-[35px] leading-[100px] text-[#0B132A]">{favTitle}</div>
       <div className="text-[#4F5665] leading-7">{descTitle}</div>
-      <div className="flex">{handleFavProduct}</div>
+      <div className="flex space-x-14 pt-20">{handleFavProduct}</div>
     </div>
   );
 };

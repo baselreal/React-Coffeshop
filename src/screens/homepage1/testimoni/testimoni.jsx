@@ -1,5 +1,6 @@
 import React from "react";
-// import { AiFillStar } from "react-icons/ai";
+import Testicom from "../../../components/testicom/testicom";
+
 // import Viezh from "./viezh.png";
 // import Yessica from "./Yessica.png";
 // import Kim from "./kim.png";
@@ -7,7 +8,7 @@ import React from "react";
 const Testimoni = () => {
   return (
     <div>
-      <div>testimoni</div>
+      <Testicom />
     </div>
   );
 };
@@ -49,24 +50,24 @@ export default Testimoni;
 
 //         {/* Awal Yessica  */}
 
-//         <div className=" box-border border-4 border-solid w-[23%] h-fit py-4 bg-[#FFFFFF] rounded-xl ">
-//           <div className="float-left pl-6 pt-5">
-//             <img className="w-[50px] h-[50px] rounded-full" src={Yessica} alt="" />
-//           </div>
-//           <div className="flex flex-col float-left pl-5 pt-5">
-//             <div className="text-[#0B132A] text-[18px] font-bold">Yessica Christy</div>
-//             <div className="text-[14px]">Shanxi, China</div>
-//           </div>
-//           <div className="float-right mr-5 pt-7 flex flex-row space-x-2">
-//             <div className="font-medium"> 4.5 </div>
-//             <div className="text-yellow-400 pt-1">
-//               <AiFillStar />
-//             </div>
-//           </div>
-//           <div className="pt-[90px] leading-7 pl-2 items-center justify-center w-full ]">
-//             <div className="text-[#0B132A]  font-semibold">“I like it because I like to travel far and still can make my day better just by drinking their Hazelnut Latte</div>
-//           </div>
-//         </div>
+        // <div className=" box-border border-4 border-solid w-[23%] h-fit py-4 bg-[#FFFFFF] rounded-xl ">
+        //   <div className="float-left pl-6 pt-5">
+        //     <img className="w-[50px] h-[50px] rounded-full" src={Yessica} alt="" />
+        //   </div>
+        //   <div className="flex flex-col float-left pl-5 pt-5">
+        //     <div className="text-[#0B132A] text-[18px] font-bold">Yessica Christy</div>
+        //     <div className="text-[14px]">Shanxi, China</div>
+        //   </div>
+        //   <div className="float-right mr-5 pt-7 flex flex-row space-x-2">
+        //     <div className="font-medium"> 4.5 </div>
+        //     <div className="text-yellow-400 pt-1">
+        //       <AiFillStar />
+        //     </div>
+        //   </div>
+        //   <div className="pt-[90px] leading-7 pl-2 items-center justify-center w-full ]">
+        //     <div className="text-[#0B132A]  font-semibold">“I like it because I like to travel far and still can make my day better just by drinking their Hazelnut Latte</div>
+        //   </div>
+        // </div>
 
 //         {/* Akhir Yessica  */}
 
