@@ -39,7 +39,11 @@ const Partnercom = () => {
         )
     })
   return (
+<<<<<<< HEAD
     <div className='flex flex-col w-full items-center bg-gray-50'>
+=======
+    <div className='flex flex-col w-full items-center '>
+>>>>>>> 45c9720ae58412f65192435b666b0915bff778b4
         <div className="font-bold font-rubik text-[35px] leading-7 py-20">{partnerTitle}</div>
         <div className='flex items-center opacity-[.2] space-x-7'>{partnerMap}</div>
     </div>
