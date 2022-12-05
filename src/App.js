@@ -2,28 +2,37 @@ import './App.css'
 import React from "react";
 import Navbar from './screens/homepage1/navbar/navbar';
 import Home1 from './screens/homepage1/home1/home1';
-import Info from './screens/homepage1/info/info';
+// import Info from './screens/homepage1/info/info';
 import Homecon from './screens/homepage1/homecontent/homecon';
 import Favorite from './screens/homepage1/favorite/favorite';
-// import Chizu from './screens/homepage1/map/chizu';
-// import Partner from './screens/homepage1/partner/partner';
-// import Testimoni from './screens/homepage1/testimoni/testimoni';
+import Chizu from './screens/homepage1/map/chizu';
+import Partner from './screens/homepage1/partner/partner';
+import Testimoni from './screens/homepage1/testimoni/testimoni';
+import Slider from './components/testicom/assets/utility/slider';
+import Promo from './screens/homepage1/promo/promo';
+import Footer from './screens/homepage1/footer/footer';
 
 
 function App() {
   return (
     <div className="App">
-
-      <Navbar/>
-      <Home1/>
-      <Info/>
-
+      <div>
+        <Navbar />
+        <Home1/>
+        {/* <Info/> */}
+      </div>
       <Homecon/> 
       <Favorite/>
-      {/* <Chizu />
+      <Chizu />
       <Partner/>
-      <Testimoni/> */}
-
+      <div>
+        <Testimoni/>
+        <Slider />
+      </div>
+      <div>
+      <Promo />
+      <Footer />
+      </div>
      </div>
   );
 }

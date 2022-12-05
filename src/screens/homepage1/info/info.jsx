@@ -1,15 +1,11 @@
 import React from "react";
 import Infocom from "../../../components/infocom/infocom";
-import { BsPersonFill } from "react-icons/bs";
-import { MdLocationPin } from "react-icons/md";
-import { AiOutlineHeart } from "react-icons/ai";
+
 
 const Info = () => {
   return (
-    <div className="flex justify-center items-center text-center -mt-32">
-     <div className=""> <Infocom logos={<BsPersonFill/>} names="90+" about='Staff'/> </div>
-     <div> <Infocom logos={<MdLocationPin/>} names="30+" about='Store'/></div>
-     <div> <Infocom logos={<AiOutlineHeart/>} names="800+" about='Customer'/> </div>
+    <div className="flex justify-center items-center text-center lg:-mt-44 md:-mt-60 -mt-[250px]">
+     <Infocom />
     </div>
   );
 };

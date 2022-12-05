@@ -1,4 +1,5 @@
 import React from 'react'
+import Partnercom from '../../../components/partnercom/partnercom'
 // import Netflix from './netflix.png'
 // import Reddit from './reddit.png'
 // import Amazon from './amazon.png'
@@ -8,7 +9,7 @@ import React from 'react'
 const Partner = () => {
   return (
    <div>
-    <div>Partner</div>
+    <Partnercom/>
    </div>
   )
 }

@@ -4,15 +4,11 @@
     box-sizing: border-box;
 }
 
-.navList li a:hover {
-    color: rgb(99, 114, 114);
-}
-
 .login:hover {
     color: rgb(177, 184, 181);
 }
 
-.daftar:hover {
+.register:hover {
     background-color: gold;
     font-weight: 600;
 }
@@ -21,17 +17,25 @@
     display: none;
 }
 
-
-@media only screen and (max-width:1094px){
-   .login {
+.close-btn {
     display: none;
-   }
+}
 
-   .daftar {
-    display: none;
-   }
 
-   .btn-toggle {
-    display: flex;
-   }
+@media only screen and (max-width: 1024px) {
+    .nav-list{
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .register {
+        display: none;
+    }
+
+    .btn-toggle {
+        display: flex;
+    }
 }

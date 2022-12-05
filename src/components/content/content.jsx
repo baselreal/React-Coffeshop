@@ -33,7 +33,7 @@ const Content = (props) => {
     const handleText = text.map((obj) => {
         return (
             <ul key={obj.id} >
-                <li className="flex space-x-5">
+                <li className="flex lg:space-x-5 md:space-x-3 ">
                     <div className="text-[#2FAB73] text-lg">{obj.check}</div>
                    <div className="">{obj.desc}</div> 
                 </li>
@@ -48,14 +48,14 @@ const Content = (props) => {
 
    
   return (
-    <div className="content flex w-full h-screen justify-center items-center font-rubik space-x-16 ">
+    <div className="content flex lg:flex-row md:flex-row flex-col w-full h-screen justify-center items-center font-rubik lg:space-x-16 md:space-x-10 ">
       <div className="img">
-        <img src={conimg} alt="Content" />
+        <img className="lg:w-[600px] md:w-[450px]" src={conimg} alt="Content" />
       </div>
-      <div className="float-right flex flex-col w-[30%] pt-5 ">
-        <div className="text-[35px] font-bold leading-[50px] text-[#0B132A]">{conTitle}</div>
-        <div className="text-[16.5px] font-normal leading-7 pt-5 text-[#4F5665]">{conContent}</div>
-        <div className="text-[14px] pt-5 space-y-5">{handleText}</div>
+      <div className=" flex flex-col lg:w-[35%] md:w-[40%] pt-5 pr-5 lg:px-2 md:px-2 px-6 ">
+        <div className="lg:text-[35px] md:text-[28px] text-[20px] font-bold leading-[50px] text-[#0B132A]">{conTitle}</div>
+        <div className="lg:text-[16.5px] md:text-[13px] font-normal leading-7 pt-5 text-[#4F5665]">{conContent}</div>
+        <div className="lg:text-[14px] md:text-[12px] pt-5 space-y-4">{handleText}</div>
       </div>
     </div>
   );
