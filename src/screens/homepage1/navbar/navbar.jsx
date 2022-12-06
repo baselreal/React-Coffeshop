@@ -3,10 +3,11 @@ import Coffee1 from "./coffee1.jpg";
 import "../style.css";
 import Navcom from "../../../components/navcom/navcom";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {handleOpen, open} = props
   return (
     <>
-      <Navcom logo={Coffee1} name='Coffee Shop'/>
+      <Navcom open={open} handleOpen={handleOpen} logo={Coffee1} name='Coffee Shop'/>
     </>
   )
 };

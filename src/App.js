@@ -1,5 +1,5 @@
 import './App.css'
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from './screens/homepage1/navbar/navbar';
 import Home1 from './screens/homepage1/home1/home1';
 // import Info from './screens/homepage1/info/info';
@@ -14,26 +14,62 @@ import Footer from './screens/homepage1/footer/footer';
 
 
 function App() {
+  const [open, setOpen] = useState(false)
+ 
+//choose the screen size 
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+        setOpen(true)
+    } else {
+        setOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
+
+  const handleOpen = () => {
+    setOpen(!open)
+  }
+
+  console.log(open)
+
   return (
-    <div className="App">
-      <div>
-        <Navbar />
-        <Home1/>
-        {/* <Info/> */}
-      </div>
-      <Homecon/> 
-      <Favorite/>
-      <Chizu />
-      <Partner/>
-      <div>
-        <Testimoni/>
-        <Slider />
-      </div>
-      <div>
-      <Promo />
-      <Footer />
-      </div>
-     </div>
+    <>
+     {
+      open ? (
+        <div className="App lg:hidden md:flex flex">
+        <Navbar open={open} handleOpen={handleOpen} />
+        <div className='w-full h-[80vh] bg-white absolute'>
+          {/* compoenent disin */}
+          <div/> 
+        </div>
+        </div>
+      ): (
+        <div className="App">
+        <div>
+          <Navbar open={open} handleOpen={handleOpen} />
+          <Home1/>
+          {/* <Info/> */}
+        </div>
+        <Homecon/> 
+        <Favorite/>
+        <Chizu />
+        <Partner/>
+        <div>
+          <Testimoni/>
+          <Slider />
+        </div>
+        <div>
+        <Promo />
+        <Footer />
+        </div>
+       </div>
+      )
+    }
+
+     </>
   );
 }
 

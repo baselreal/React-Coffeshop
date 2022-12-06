@@ -9,11 +9,7 @@ import Partnercom from '../../../components/partnercom/partnercom'
 const Partner = () => {
   return (
    <div>
-<<<<<<< HEAD
     <Partnercom/>
-=======
-    <Partnercom />
->>>>>>> 45c9720ae58412f65192435b666b0915bff778b4
    </div>
   )
 }

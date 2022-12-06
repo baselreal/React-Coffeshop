@@ -1,29 +1,29 @@
 import React from "react";
 
- const navList = () => {
-  const navLink = [
+//  const navList = () => {
+  export const navLink = [
     {
-      Id: 125616,
+      Id: 1,
       Nbl: "Home"
     },
     {
-      Id: 12347838,
+      Id: 2,
       Nbl: "Product"
     },
     {
-      Id: 12067816,
+      Id: 3,
       Nbl: "Your Cart"
     },
     {
-      Id: 1245853486,
-      List: "History"
+      Id: 4,
+      Nbl: "History"
     }
   ]
-  return (
-    <div>
+  // return (
+  //   <div>
       
-    </div>
-    )
-  }
+  //   </div>
+  //   )
+  // }
 
-export default navList
+// export {navLink}

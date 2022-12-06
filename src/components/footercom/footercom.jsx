@@ -79,7 +79,7 @@ const Footercom = () => {
   const handleFooterMedia = footer_media.map((media) => {
     return (
       <ul key={media.Id}>
-        <li className="bg-[#FFBA33] rounded-full text-center items-center">
+        <li className="bg-[#FFBA33] rounded-full text-center p-1 items-center">
           <a href="">{media.Logo}</a>
         </li>
       </ul>
