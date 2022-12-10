@@ -28,13 +28,13 @@ const Partnercom = () => {
         part_img: Spotify
        },
     ]
-
+// 
     const partnerTitle = 'Our Partner'
 
     const partnerMap = partnerImgArr.map((arrPart) => {
         return (
             <div key={arrPart.id}>
-            <img className='lg:w-[190px] md:w-[150px] w-[150px]' src={arrPart.part_img} alt="image can't be loaded" />
+            <div className='lg:w-[190px] md:w-[150px] w-[150px]'>{arrPart.part_img}</div>
             </div>
         )
     })
