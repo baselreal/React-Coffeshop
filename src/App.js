@@ -11,29 +11,29 @@ import Testimoni from './screens/homepage1/testimoni/testimoni';
 import Slider from './components/testicom/assets/utility/slider';
 import Promo from './screens/homepage1/promo/promo';
 import Footer from './screens/homepage1/footer/footer';
+import ToogleNav from './components/navcom/toogle';
 
 
 function App() {
   const [open, setOpen] = useState(false)
  
 //choose the screen size 
-  const handleResize = () => {
-    if (window.innerWidth < 768) {
-        setOpen(true)
-    } else {
-        setOpen(false)
-    }
-  }
+  // const handleResize = () => {
+  //   if (window.innerWidth < 1024) {
+  //       setOpen(true)
+  //   }
+  //    else {
+  //       setOpen(false)
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize)
-  })
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize)
+  // })
 
   const handleOpen = () => {
     setOpen(!open)
   }
-
-  console.log(open)
 
   return (
     <>
@@ -41,9 +41,10 @@ function App() {
       open ? (
         <div className="App lg:hidden md:flex flex">
         <Navbar open={open} handleOpen={handleOpen} />
-        <div className='w-full h-[80vh] bg-white absolute'>
-          {/* compoenent disin */}
+        <div className='w-full h-screen bg-white absolute '>
+        <ToogleNav />
           <div/> 
+          
         </div>
         </div>
       ): (

@@ -1,6 +1,4 @@
-import React from "react";
 
-//  const navList = () => {
   export const navLink = [
     {
       Id: 1,
@@ -19,11 +17,3 @@ import React from "react";
       Nbl: "History"
     }
   ]
-  // return (
-  //   <div>
-      
-  //   </div>
-  //   )
-  // }
-
-// export {navLink}

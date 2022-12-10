@@ -2,6 +2,7 @@ import React from 'react'
 import { BsPersonFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
+import './infostyle.css'
 
 const Infocom = () => {
   const infoProps = [
@@ -21,16 +22,19 @@ const Infocom = () => {
       about: 'Customers'
     },
   ]
-
+  // border lg:py-16 md:py-[70px] py-[45px] lg:px-24 md:px-[60px] px-[25px]
+  // lg:py-20 md:py-16 py-14 vsm:py-12 mini:py-8 vmini:py-5 lg:px-20 md:px-16 vsm:px-8 mini:px-[18px] vmini:px-1 px-14
   const handleInfoProps = infoProps.map((infos) => {
     return (
-    <div key={infos.names} className="flex box-border lg:py-20 md:py-20 py-14 lg:px-[100px] md:px-[65px] px-[34px] bg-white border lg:space-x-4 md:space-x-3 space-x-2 ">
-        <div className=" bg-yellow-400 lg:w-12 md:w-12 w-8 lg:h-12 md:h-12 h-8 lg:mt-0 md:mt-0 mt-2  rounded-full text-center items-center justify-center box-border border-3 flex text-lg ">
+    <div key={infos.names} className="">
+      <div className=' flex  rounded-sm  bg-white lg:space-x-4 md:space-x-3 space-x-2  border lg:py-20 md:py-20 py-16 vsm:py-14 mini:py-14 vmini:py-10 lg:px-20 md:px-16 vsm:px-8 mini:px-[20px] vmini:px-2 px-12'>
+        <div className=" bg-yellow-400 lg:w-12 md:w-12 w-6 lg:h-12 md:h-12 h-6 lg:mt-0 md:mt-0 mt-1  rounded-full text-center items-center justify-center box-border border-3 flex text-lg ">
           {infos.logos}
         </div>
         <div className="">
-          <div className="lg:text-3xl md:text-3xl text-xl font-bold">{infos.names}</div>
-          <div className="">{infos.about}</div>
+          <div className="lg:text-3xl md:text-3xl text-lg vmini:text-[12px] font-bold">{infos.names}</div>
+          <div className="vmini:text-[12px]">{infos.about}</div>
+      </div>
       </div>
       </div>
       )
@@ -39,8 +43,8 @@ const Infocom = () => {
 
   return (
 
-    <div className="flex w-full items-end h-full lg:text-center pt-44 justify-center px-20 ">
-      <div className='flex '>{handleInfoProps}</div>
+    <div className=" flex text-center justify-center items-end h-max ">
+      <div className='flex'>{handleInfoProps}</div>
     </div>
 
   )

@@ -34,14 +34,14 @@ const Partnercom = () => {
     const partnerMap = partnerImgArr.map((arrPart) => {
         return (
             <div key={arrPart.id}>
-            <img className='w-[190px] h-[60px]' src={arrPart.part_img} alt="image can't be loaded" />
+            <img className='lg:w-[190px] md:w-[150px] w-[150px]' src={arrPart.part_img} alt="image can't be loaded" />
             </div>
         )
     })
   return (
-    <div className='flex flex-col w-full items-center bg-gray-50'>
+    <div className='flex flex-col w-full items-center bg-gray-50 px-5'>
         <div className="font-bold font-rubik text-[35px] leading-7 py-20">{partnerTitle}</div>
-        <div className='flex items-center opacity-[.2] space-x-7'>{partnerMap}</div>
+        <div className='flex lg:flex-row md:flex-row flex-col items-center opacity-[.2] lg:space-x-7 md:space-x-7 space-y-5'>{partnerMap}</div>
     </div>
   )
 }

@@ -2,7 +2,6 @@ import { React } from "react";
 import "./navstyle.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
 import { navLink } from "./utilitynav";
 
 const Navcom = (props) => {
@@ -12,7 +11,7 @@ const handleNavList = navLink.map((nav) => {
   return (
     <ul key={nav.Id}>
       <li>
-        <a href="">{nav.Nbl}</a>
+        <a href="/">{nav.Nbl}</a>
       </li>
     </ul>
   )
@@ -21,8 +20,8 @@ const handleNavList = navLink.map((nav) => {
   return (
     <>
       <div className="w-full z-50 py-6 flex flex-row justify-between items-center text-center font-rubik">
-        <div className="flex space-x-5 lg:pl-32 md:pl-32 pl-20">
-          <img className="w-[35px] h-[35px]" src={logo} alt="" />
+        <div className="flex space-x-5 lg:pl-32 md:pl-32 pl-20 mini:pl-5">
+          <img className="w-[35px] h-[35px] SE:w-6 SE:h-6" src={logo} alt="" />
           <div className="font-bold text-[20px]">{name}</div>
         </div>
 
@@ -34,11 +33,11 @@ const handleNavList = navLink.map((nav) => {
           <button className="register bg-[#FFBA33] w-36 h-11 rounded-3xl">
             Sign Up
           </button>
-          <div onClick={handleOpen} className="btn-toggle text-xl cursor-pointer">
-            {open ? <AiOutlineClose/> : <GiHamburgerMenu />}
-          </div>
   
         </div>
+        <div onClick={handleOpen} className="btn-toggle text-xl cursor-pointer w-80% justify-end pr-20 SE:pr-10">
+            {open ? <AiOutlineClose/> : <GiHamburgerMenu />}
+          </div>
       </div>
     </>
   );

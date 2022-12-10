@@ -6,6 +6,14 @@ module.exports = {
       fontFamily: {
         rubik: ['rubik', 'sans-serif']
       },
+      screens: {
+        'sm' : {'max': '768px'},
+        'vsm': {'max':'576px'},
+        'fold': {'max':'280px'},
+        'mini': {'max':'469px'},
+        'vmini': {'max': '375px'},
+        'SE' : {'max': '415px'}
+      }
     },
   },
   plugins: [],

@@ -80,7 +80,7 @@ const Footercom = () => {
     return (
       <ul key={media.Id}>
         <li className="bg-[#FFBA33] rounded-full text-center p-1 items-center">
-          <a href="">{media.Logo}</a>
+          <a href="/">{media.Logo}</a>
         </li>
       </ul>
     );
@@ -90,7 +90,7 @@ const Footercom = () => {
     return (
       <ul key={list.Id}>
         <li>
-          <a href="">{list.Prod}</a>
+          <a href="/">{list.Prod}</a>
         </li>
       </ul>
     );
@@ -100,7 +100,7 @@ const Footercom = () => {
     return (
       <ul key={engange.Id}>
         <li>
-          <a href="">{engange.Eng}</a>
+          <a href="/">{engange.Eng}</a>
         </li>
       </ul>
     );
@@ -108,13 +108,13 @@ const Footercom = () => {
 
   return (
     <div className="flex w-full font-rubik justify-center -mt-10 bg-gray-200">
-      <div className="flex w-[80%] pt-20 py-20">
+      <div className="flex lg:flex-row md:flex-row flex-col lg:w-[80%] md:w-[90%] w-full pt-20 lg:py-20 py-10 px-5">
         <div className="flex flex-col">
           <div className="flex space-x-3">
             <img className="w-[30px] h-[33px] pt-1 mix-blend-multiply" src={footer_logo} alt="" />
             <div className="text-[#0B132A] text-xl font-bold pt-1">{shop_name}</div>
           </div>
-          <div className="text-[#4F5665] font-semibold text-[16px] leading-7 w-[70%] py-4">{footer_desc}</div>
+          <div className="text-[#4F5665] font-semibold text-[16px] leading-7 lg:w-[70%] md:w-[70%] w-[90%] py-4">{footer_desc}</div>
           <div className="flex box-border border-3 ">
             <div className="flex space-x-2 text-[30px] ">{handleFooterMedia}</div>
           </div>
@@ -123,14 +123,14 @@ const Footercom = () => {
             <div className="text-[16px] leading-7">{footer_date}</div>
           </div>
         </div>
-        <div className="flex flex-row justify-end w-full h-fit">
-          <div className="pr-20">
+        <div className="flex vsm:grid lg:justify-end md:justify-end w-full lg:flex-row md:flex-row flex-col SE:pt-5">
+          <div className="lg:pr-20 SE:pb-5">
             <div className="text-[#0B132A] font-semibold text-[18px] ">{product_title}</div>
-          <div className="space-y-3 pr-16 pt-6">{handleFooterProduct}</div>
+          <div className="flex vsm:grid vsm:grid-cols-3 SE:grid-cols-2 SE:text-left SE:gap-2 vsm:text-center vsm:space-x-0 lg:space-y-3 vsm:items-center  md:space-y-3 pr-16 lg:pt-6 md:pt-6 pt-3 pb-6 lg:flex-col md:flex-col flex-row lg:space-x-0 md:space-x-0 space-x-4  vsm:space-y-2 vsm:gap-4 ">{handleFooterProduct}</div>
           </div>
-          <div>
+          <div className="md:pl-10 w-max ">
             <div className="text-[#0B132A] font-semibold text-[18px]">{engage_title}</div>
-          <div className="space-y-3 pt-6 ">{handleFooterEngage}</div>
+          <div className="flex vsm:grid vsm:grid-cols-3 SE:grid-cols-2 SE:col-start-2 SE:text-left SE:gap-4 fold:text-60 vsm:text-center vsm:space-x-0 lg:space-y-3 vsm:items-center  md:space-y-3 pr-16 lg:pt-6 md:pt-6 pt-3 pb-6 lg:flex-col md:flex-col flex-row lg:space-x-0 md:space-x-0 space-x-4  vsm:space-y-2 vsm:gap-4 ">{handleFooterEngage}</div>
           </div>
         </div>
       </div>
