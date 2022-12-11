@@ -41,7 +41,7 @@ const Homecom = (props) => {
 
               <div className="text-white text-xl leading-[30px]">{description}</div>
                
-              <button className=" px-16 py-5 w-fit rounded-[10px] bg-[#FFBA33] text-[18px] text-center" onClick="">
+              <button className=" px-16 py-5 w-fit rounded-[10px] bg-[#FFBA33] text-[18px] text-center">
                 Get Started
               </button>
             </div>

@@ -37,5 +37,16 @@
 
     .btn-toggle {
         display: flex;
+        transition: 0.5 ease-in-out ;
+    }
+
+    .nav_toogle{
+        transform: translateY();
+        transition: 0.5 ease-in-out ;
+    }
+
+    .toogle_nav {
+        transform: translateY();
+        transition: 0.5 ease-in-out ;
     }
 }

@@ -38,9 +38,10 @@ const Menu = () => {
     },
   ];
 
-  const handleFavProduct = favProduct.map((prod) => {
+  const handleFavProduct = favProduct.map((prod, index) => {
     return (
-      <div key={prod.id} className=" w-full flex justify-center">
+      <div key={prod.id}>
+      <div  className=" w-full flex justify-center">
         <div className="box-border border-2 border-solid border-[#DDDDDD] justify-center">
           <div className="flex lg:flex-col md:flex-row flex-col sm:text-center sm:items-center">
             <div className="lg:pt-[62px]  py-8 lg:pl-0 pl-6 lg:justify-center flex sm:pr-6">
@@ -51,9 +52,9 @@ const Menu = () => {
               <div className="SE:text-[13px]">{prod.fav_name}</div>
             </div>
             <div className="lg:py-10 lg:space-y-6 lg:h-[300px]">
-              {prod.fav_desc.map((item) => {
+              {prod.fav_desc.map((item, index) => {
                 return (
-                  <div className="flex flex-row lg:px-20 lg:py-0 sm:py-2 sm:px-2 lg:space-x-3 space-x-2 lg:w-full w-[200px]">
+                  <div key={index} className="flex flex-row lg:px-20 lg:py-0 sm:py-2 sm:px-2 lg:space-x-3 space-x-2 lg:w-full w-[200px]">
                     <div className="flex text-[#2FAB73]">{prod.fav_check}</div>
                     <div className="lg:flex flex flex-col -mt-1 text-[14px] SE:text-[12px]">{item}</div>
                   </div>
@@ -71,6 +72,7 @@ const Menu = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   });

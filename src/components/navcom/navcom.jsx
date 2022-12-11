@@ -7,6 +7,7 @@ import { navLink } from "./utilitynav";
 const Navcom = (props) => {
   const { logo, name, login, handleOpen, open } = props;
 
+
 const handleNavList = navLink.map((nav) => {
   return (
     <ul key={nav.Id}>
@@ -19,7 +20,7 @@ const handleNavList = navLink.map((nav) => {
 
   return (
     <>
-      <div className="w-full z-50 py-6 flex flex-row justify-between items-center text-center font-rubik">
+      <div className="stick w-full z-50 py-6 flex flex-row justify-between items-center text-center font-rubik ">
         <div className="flex space-x-5 lg:pl-32 md:pl-32 pl-20 mini:pl-5">
           <img className="w-[35px] h-[35px] SE:w-6 SE:h-6" src={logo} alt="" />
           <div className="font-bold text-[20px]">{name}</div>

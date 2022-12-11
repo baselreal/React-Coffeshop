@@ -1,4 +1,5 @@
 import './App.css'
+import '../src/components/navcom/navstyle.css'
 import React, { useState } from "react";
 import Navbar from './screens/homepage1/navbar/navbar';
 import Home1 from './screens/homepage1/home1/home1';
@@ -29,7 +30,7 @@ function App() {
 
   // useEffect(() => {
   //   window.addEventListener("resize", handleResize)
-  // })
+  // },[])
 
   const handleOpen = () => {
     setOpen(!open)
@@ -39,9 +40,9 @@ function App() {
     <>
      {
       open ? (
-        <div className="App lg:hidden md:flex flex">
+        <div className="ease-in-out delay-75 lg:hidden md:flex flex">
         <Navbar open={open} handleOpen={handleOpen} />
-        <div className='w-full h-screen bg-white absolute '>
+        <div className='ease-in-out delay-75 w-full h-screen bg-white absolute '>
         <ToogleNav />
           <div/> 
           
@@ -50,9 +51,8 @@ function App() {
       ): (
         <div className="App">
         <div>
-          <Navbar open={open} handleOpen={handleOpen} />
+          <Navbar open={open} handleOpen={handleOpen}  />
           <Home1/>
-          {/* <Info/> */}
         </div>
         <Homecon/> 
         <Favorite/>

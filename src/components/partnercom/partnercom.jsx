@@ -34,7 +34,7 @@ const Partnercom = () => {
     const partnerMap = partnerImgArr.map((arrPart) => {
         return (
             <div key={arrPart.id}>
-            <div className='lg:w-[190px] md:w-[150px] w-[150px]'>{arrPart.part_img}</div>
+             <img className='lg:w-[190px] md:w-[150px] w-[150px]' src={arrPart.part_img} alt="" />
             </div>
         )
     })
